@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# OS/editor
+.DS_Store
+.vscode/
+
+# Local planning state
+.hermes/work/
+
+# Build intermediates and visual QA
+.rendered*/
+releases/v1.1/*.txt
+*.html
+*.log
+
+# Keep the versioned release artifact
+!releases/
+!releases/v1.1/
+!releases/v1.1/*.pdf

@@ -1,0 +1,23 @@
+name: validate-guide
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate tutorial structure
+        run: python3 scripts/validate.py
+      - name: Install PDF tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc weasyprint poppler-utils
+      - name: Build PDF
+        run: bash scripts/build_pdf.sh
+      - name: Verify PDF
+        run: |
+          test -s releases/v1.1/guia-hermes-agent-labhdufba-v1.1.pdf
+          pdfinfo releases/v1.1/guia-hermes-agent-labhdufba-v1.1.pdf | grep '^Pages:'
