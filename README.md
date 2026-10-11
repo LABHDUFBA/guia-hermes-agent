@@ -1,8 +1,8 @@
 # Guia Hermes Agent do LABHDUFBA
 
-**Versão 1.1 — outubro de 2026**
+**Versão 1.2 — outubro de 2026**
 
-Tutorial passo a passo, em português brasileiro, para pesquisadores e estudantes das Ciências Humanas começarem a usar o [Hermes Agent](https://hermes-agent.nousresearch.com/docs) — o agente de IA autônomo de código aberto desenvolvido pelo [Nous Research](https://nousresearch.com).
+Tutorial passo a passo, em português brasileiro, para pesquisadores e estudantes das Ciências Humanas usarem o [Hermes Agent](https://hermes-agent.nousresearch.com/docs) principalmente pelo **Telegram**. A versão 1.2 adota uma abordagem *Telegram-first*: comandos, automações e recuperação de problemas começam no chat; terminal ou SSH aparecem apenas na configuração inicial ou quando o próprio bot está inacessível.
 
 > **Aviso.** Este guia é um material educacional do Laboratório de Humanidades Digitais da UFBA (LABHD-UFBA). Ele não substitui a [documentação oficial](https://hermes-agent.nousresearch.com/docs), sempre atualizada. Verifique a versão do seu Hermes com `hermes --version` antes de seguir qualquer instrução.
 
@@ -12,6 +12,7 @@ Este tutorial foi escrito para pessoas que:
 
 - nunca usaram um agente de IA autônomo;
 - pertencem às Ciências Humanas e Sociais;
+- acessam o Hermes principalmente pelo Telegram;
 - precisam compreender conceitos como SSH, servidor, VPS, API, GitHub e modelos de IA antes de usar o Hermes;
 - querem usar o Hermes como ferramenta de pesquisa — leitura, análise de dados, escrita, automação.
 
@@ -19,12 +20,12 @@ Este tutorial foi escrito para pessoas que:
 
 Ao final deste guia, você será capaz de:
 
-1. instalar e configurar o Hermes Agent;
-2. escolher um provedor e um modelo de IA;
-3. usar ferramentas, skills e memória;
-4. configurar um bot no Telegram;
-5. agendar tarefas com cron;
-6. diagnosticar e resolver problemas comuns.
+1. confirmar identidade, perfil, modelo e sessão pelo Telegram;
+2. distinguir comandos `/...`, pedidos em linguagem natural e ações administrativas;
+3. usar ferramentas, skills, memória, MCP e subagentes pelo chat;
+4. criar e administrar automações em linguagem natural;
+5. diagnosticar e resolver problemas enquanto o bot ainda responde;
+6. reconhecer quando o conserto exige Desktop, Dashboard, terminal ou SSH.
 
 ## Onde encontrar tudo
 
@@ -55,3 +56,4 @@ Este é um guia evolutivo. Para sugerir correções ou acréscimos:
 |---|---|---|
 | 1.0 | out/2026 | rascunho inicial |
 | 1.1 | out/2026 | instalação, conceitos, troubleshooting, glossário e PDF |
+| 1.2 | out/2026 | reestruturação Telegram-first, comandos de chat, automações e recuperação em duas camadas |

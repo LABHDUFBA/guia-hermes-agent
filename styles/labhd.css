@@ -2,7 +2,7 @@
   size: A4;
   margin: 20mm 18mm 20mm 18mm;
   @bottom-center {
-    content: "Guia Hermes Agent do LABHDUFBA · versão 1.1 · " counter(page);
+    content: "Guia Hermes Agent do LABHDUFBA · " string(docversion) " · " counter(page);
     font-family: "Noto Sans", sans-serif;
     font-size: 8pt;
     color: #4c5964;
@@ -128,7 +128,12 @@ header#title-block-header { display: none; }
   margin: 8mm 0 4mm;
 }
 .title-block .subtitle { font-size: 15pt; color: #344d58; }
-.title-block .version { margin-top: 30mm; font-size: 11pt; color: #4c5964; }
+.title-block .version {
+  margin-top: 30mm;
+  font-size: 11pt;
+  color: #4c5964;
+  string-set: docversion content();
+}
 .title-block .license { margin-top: 9mm; font-size: 9pt; color: #4c5964; }
 
 thead { display: table-header-group; }

@@ -11,7 +11,7 @@ __pycache__/
 
 # Build intermediates and visual QA
 .rendered*/
-releases/v1.1/*.txt
+releases/v*/*.txt
 *.html
 *.log
 

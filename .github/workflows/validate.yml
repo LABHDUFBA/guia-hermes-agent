@@ -19,5 +19,5 @@ jobs:
         run: bash scripts/build_pdf.sh
       - name: Verify PDF
         run: |
-          test -s releases/v1.1/guia-hermes-agent-labhdufba-v1.1.pdf
-          pdfinfo releases/v1.1/guia-hermes-agent-labhdufba-v1.1.pdf | grep '^Pages:'
+          test -s releases/v1.2/guia-hermes-agent-labhdufba-v1.2.pdf
+          pdfinfo releases/v1.2/guia-hermes-agent-labhdufba-v1.2.pdf | grep '^Pages:'

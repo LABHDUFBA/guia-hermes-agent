@@ -23,7 +23,7 @@ Para corrigir um comando ou uma explicação:
 ```bash
 python3 scripts/validate.py
 bash scripts/build_pdf.sh
-pdfinfo releases/v1.1/guia-hermes-agent-labhdufba-v1.1.pdf
+pdfinfo releases/v1.2/guia-hermes-agent-labhdufba-v1.2.pdf
 ```
 
 Toda alteração no texto deve preservar a distinção entre:
